@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEET THE DEVELOPER</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>html{scroll-behavior: smooth;}</style>
+</head>
+
+
+<body>
+  <div class="min-h-screen bg-center bg-cover">
+
+    <!-- Navbar -->
+    <nav class="flex flex-col md:flex-row items-center mx-auto px-5 py-2 sticky top-0 bg-[#D9D9D9] z-100  ">
+      <!-- Logo -->
+      <div class="md:mb-0">
+        <a href="index.html">
+          <img src="assets/logo.png" class="w-[200px] cursor-pointer" alt="MBC Logo" />
+        </a>
+      </div>
+      <!-- Menu -->
+      <ul class="hidden lg:flex md:flex flex-wrap justify-center gap-3 items-center ml-auto">
+        <li><a href="index.html#tentang-kami" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Tentang Kami</a></li>
+        <li><a href="index.html#visimisi" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Visi & Misi</a></li>
+        <li><a href="index.html#divisi" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Divisi</a></li>
+        <li><a href="contact.html" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Contact</a></li>
+        <li><a href="developer.html" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Developer</a></li>
+      </ul>
+      <!-- Menu icon -->
+        <button id="menu" class="hover:cursor-pointer px-4 md:hidden hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="Open Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+      <!-- Menubar -->
+       <div id="menuBar" class="hidden flex-col w-full absolute top-16 left-0 bg-[#D9D9D9] text-center md:hidden shadow-lg">
+        <a href="index.html#tentang-kami" class="block w-full py-3 font-semibold hover:bg-gray-200">Tentang Kami</a>
+        <a href="index.html#visimisi" class="block w-full py-3 font-semibold hover:bg-gray-200">Visi & Misi</a>
+        <a href="index.html#divisi" class="block w-full py-3 font-semibold hover:bg-gray-200">Divisi</a>
+        <a href="contact.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Contact</a>
+        <a href="developer.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Developer</a>
+       </div>
+    </nav>
+
+    <!-- Developer Profile Section -->
+    <section class="px-6 py-10 max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-red-600 mb-4">Meet the Developer</h2>
+      <p class="text-lg mb-8">Kenalan yuk dengan orang keren di balik website ini.</p>
+
+      <!-- FOTO PROFIL -->
+      <div class="flex justify-center mb-6 pt-10">
+        <img src="assets/Foto.jpg" alt="Foto Firdaus Yudha Sakti"
+            class="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-white">
+      </div>
+
+      <h3 class="text-3xl font-semibold mb-2 text-center">Firdaus Yudha Sakti</h3>
+      <p class="text-lg italic text-gray-600 mb-4 text-center">Network Engineer & Student • Telkom University</p>
+
+      <div class="bg-gray-100 shadow-md rounded-xl p-8 text-left">
+        
+        <p class="mb-4 text-justify">Saya adalah seorang network engineer sekaligus mahasiswa yang antusias di dunia IT. Aktif belajar dan mengembangkan diri dalam bidang networking, Linux, cybersecurity, hingga pemrograman dasar. Saya suka tantangan baru dan berkomitmen untuk terus berkembang sebagai profesional di industri teknologi.</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h4 class="font-semibold">📍 Lokasi</h4>
+            <p>Cilacap, Indonesia</p>
+          </div>
+          <div>
+            <h4 class="font-semibold">📧 Email</h4>
+            <p><a href="mailto:firdausyudhasakti.work@gmail.com" class="text-blue-600 underline">firdausyudhasakti.work@gmail.com</a></p>
+          </div>
+          <div>
+            <h4 class="font-semibold">📞 Telepon</h4>
+            <p>0812 2812 1877</p>
+          </div>
+          <div>
+            <h4 class="font-semibold">🔗 LinkedIn</h4>
+            <p><a href="https://www.linkedin.com/in/firdaus-yudha-sakti-64392a21a/" target="_blank" class="text-blue-600 underline">Lihat Profil</a></p>
+          </div>
+        </div>
+
+        <h4 class="text-xl font-bold mb-2 mt-8">🔧 Keahlian</h4>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Routing & Switching (Advanced)</li>
+          <li>Firewall & Network Security (Basic to Intermediate)</li>
+          <li>Linux Administration (Intermediate)</li>
+          <li>HTML, CSS, PHP (Basic to Intermediate)</li>
+          <li>Docker, Arduino, Ethical Hacking (Basic)</li>
+        </ul>
+
+        <h4 class="text-xl font-bold mb-2 mt-8">📜 Sertifikasi</h4>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>MikroTik Certified Routing Engineer</li>
+          <li>MikroTik Certified Inter-Networking Engineer</li>
+          <li>Fortinet NSE 1 & 2</li>
+          <li>Alibaba Cloud Certified Associate</li>
+          <li>ElevAlte Azure AI Fundamentals</li>
+        </ul>
+      </div>
+    </section>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBC Laboratory | Big Data</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="min-h-screen bg-center bg-cover">
+
+    <!-- Navbar -->
+    <nav class="flex flex-col md:flex-row items-center mx-auto px-5 py-2 sticky top-0 bg-[#D9D9D9] z-50">
+      <div class="md:mb-0">
+        <a href="index.html">
+          <img src="assets/logo.png" class="w-[180px] md:w-[200px] cursor-pointer" alt="MBC Logo" />
+        </a>
+      </div>
+      <!-- Menu -->
+      <ul class="hidden md:flex flex-wrap justify-center gap-3 items-center ml-auto">
+        <li><a href="#divisi" class="text-black font-semibold px-3 py-1">Tentang Divisi</a></li>
+        <li><a href="#fokus" class="text-black font-semibold px-3 py-1">Fokus</a></li>
+        <li><a href="#prestasi" class="text-black font-semibold px-3 py-1">Prestasi</a></li>
+        <li><a href="contact.html" class="text-black font-semibold px-3 py-1">Contact</a></li>
+        <li><a href="developer.html" class="text-black font-semibold px-3 py-1">Developer</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button id="menu" class="md:hidden px-4" aria-expanded="false" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <div id="menuBar" class="hidden flex-col w-full absolute top-16 left-0 bg-[#D9D9D9] text-center md:hidden shadow-lg">
+        <a href="#divisi" class="block w-full py-3 font-semibold hover:bg-gray-200">Tentang Divisi</a>
+        <a href="#fokus" class="block w-full py-3 font-semibold hover:bg-gray-200">Fokus</a>
+        <a href="#prestasi" class="block w-full py-3 font-semibold hover:bg-gray-200">Prestasi</a>
+        <a href="contact.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Contact</a>
+        <a href="developer.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Developer</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative w-full h-screen">
+      <img src="assets/GAMBAR_BIGDATA.png" alt="Banner"
+        class="w-full h-full object-cover absolute inset-0 z-0" />
+      <div
+        class="relative z-10 flex flex-col items-start justify-center h-full px-6 md:px-10 text-white space-y-4">
+        <h1 class="text-4xl md:text-5xl font-bold" style="font-family: 'Jura', sans-serif;">BIG DATA</h1>
+        <p class="text-base md:text-lg max-w-xl">"From Raw Data to Real Insight."</p>
+        <p class="text-base md:text-lg max-w-xl">Membangun talenta data-driven yang siap menghadapi tantangan industri digital.</p>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
+    </div>
+
+    <!-- Tentang Divisi -->
+    <section id="divisi" class="px-4 md:px-20 py-10">
+      <h2
+        class="text-2xl md:text-3xl font-bold text-white bg-[#1A2564] px-5 py-2 rounded-full shadow-md inline-block mb-6">
+        Tentang Divisi
+      </h2>
+      <div class="text-gray-800 text-base md:text-xl text-justify space-y-4">
+        <p>Divisi Big Data MBC Lab adalah ruang kolaborasi untuk mahasiswa yang ingin mendalami dunia data science, machine learning, dan data.</p>
+        <p>Kami fokus membentuk talenta yang mampu mengolah data dalam skala besar menjadi insight yang bernilai baik untuk riset, bisnis, maupun sosial.</p>
+      </div>
+    </section>
+
+    <!-- Fokus -->
+    <section id="fokus" class="px-4 md:px-20 py-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-white bg-[#1A2564] px-5 py-2 rounded-full shadow-md inline-block mb-6">
+        Fokus
+      </h2>
+      <ol class="list-decimal pl-6 text-gray-800 text-base md:text-xl text-justify space-y-2">
+        <li>Data Analytics, visualisasi data, analisis statistik, dan storytelling dengan data.</li>
+        <li>Machine Learning, supervised/unsupervised learning, model deployment, dan evaluasi performa.</li>
+        <li>Data Engineering, ETL pipeline, manajemen database, pemrosesan real-time (Kafka, Spark)./li>
+        <li>Riset Data, pemanfaatan data dalam proyek ilmiah, sosial, dan inovatif berbasis AI.</li>
+        <li>Business Intelligence, Dasbor interaktif (Power BI, Tableau), prediksi tren, dan pengambilan keputusan.</li>
+      </ol>
+    </section>
+
+    <!-- Prestasi -->
+    <section id="prestasi" class="px-4 md:px-20 py-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-white bg-[#1A2564] px-5 py-2 rounded-full shadow-md inline-block mb-6">
+        Prestasi
+      </h2>
+      <ol class="list-decimal pl-6 text-gray-800 text-base md:text-xl text-justify space-y-2">
+        <li>Juara lomba Data Science Hackathon (BRI, Tel-U DataFest, dll.)</li>
+        <li>Pengembangan sistem analitik masjid cerdas (Smart Mosque) untuk pemantauan energi & kehadiran.</li>
+        <li>Pelatihan internal seperti Data Science Bootcamp, workshop Python for Data, dan SQL Masterclass.</li>
+        <li>Aktif dalam kompetisi dan proyek kolaborasi di platform seperti Kaggle, DQLab, dan Dicoding.</li>
+      </ol>
+    </section>
+
+  </div>
+
+  <script>
+    // Simple toggle
+    const menu = document.getElementById('menu');
+    const menuBar = document.getElementById('menuBar');
+    menu.addEventListener('click', () => {
+      menuBar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

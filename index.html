@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBC Laboratory | Landing Page</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="min-h-screen bg-center bg-cover">
+
+    <!-- Navbar -->
+    <nav class="flex flex-col md:flex-row items-center mx-auto px-5 py-2 sticky top-0 bg-[#D9D9D9] z-100">
+      <div class="md:mb-0">
+        <a href="index.html">
+          <img src="assets/logo.png" class="w-[200px] cursor-pointer" alt="MBC Logo" />
+        </a>
+      </div>
+      <ul class="hidden lg:flex md:flex flex-wrap justify-center gap-3 items-center ml-auto">
+        <li><a href="#tentang-kami" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Tentang Kami</a></li>
+        <li><a href="#visimisi" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Visi & Misi</a></li>
+        <li><a href="#divisi" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Divisi</a></li>
+        <li><a href="contact.html" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Contact</a></li>
+        <li><a href="developer.html" class="no-underline text-black font-semibold px-3 py-1 whitespace-nowrap inline-block">Developer</a></li>
+      </ul>
+      <button id="menu" class="hover:cursor-pointer px-4 md:hidden hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <!-- Menubar -->
+      <div id="menuBar" class="hidden flex-col w-full absolute top-16 left-0 bg-[#D9D9D9] text-center md:hidden shadow-lg">
+        <a href="#tentang-kami" class="block w-full py-3 font-semibold hover:bg-gray-200">Tentang Kami</a>
+        <a href="#visimisi" class="block w-full py-3 font-semibold hover:bg-gray-200">Visi & Misi</a>
+        <a href="#divisi" class="block w-full py-3 font-semibold hover:bg-gray-200">Divisi</a>
+        <a href="contact.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Contact</a>
+        <a href="developer.html" class="block w-full py-3 font-semibold hover:bg-gray-200">Developer</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-screen">
+      <img src="assets/GAMBAR_LANDINGPAGE.png" alt="Banner" class="w-full h-full object-cover absolute inset-0 z-0" />
+      <div class="relative z-10 flex flex-col items-start justify-center h-full px-6 sm:px-10 md:px-20 text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat datang di MBC Lab!</h1>
+        <p class="text-lg md:text-xl max-w-xl">Rumahnya talenta muda Tel-U di bidang Cybersecurity, Big Data, GIS, dan Teknologi Game.</p>
+        <p class="mt-3 text-lg font-medium">~ Belajar. Riset. Tanding. Berkarya.</p>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <section id="tentang-kami" class="px-6 sm:px-10 py-20 text-center max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-bold text-white bg-red-500 px-5 py-2 rounded-full shadow-md inline-block mb-6 w-60">Tentang Kami</h2>
+      <div class="mx-auto text-justify text-gray-800 text-lg sm:text-xl">
+        <p class="mb-4">MBC Laboratory merupakan sebuah Pusat Riset Teknologi dan Konsultan yang berfokus pada pengembangan solusi di bidang Cybersecurity, Big Data Analytics, Game Technology, dan Geographic Information Systems (GIS).</p>
+        <p>MBC Laboratory adalah salah satu laboratorium di bawah naungan KK NCM yang mempelajari mengenai Cyber Security, Big Data, dan Multimedia. Laboratorium ini terbentuk pada 4 Oktober 2019.</p>
+      </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section id="visimisi" class="px-6 sm:px-10 py-20 text-center max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-bold text-white bg-red-500 px-6 py-2 rounded-full shadow-md inline-block mb-6 w-60">Visi & Misi</h2>
+      <div class="flex flex-col md:flex-row items-start justify-between gap-10">
+        <div class="flex-1">
+          <h3 class="text-red-500 text-3xl font-bold mb-2 text-center">Visi</h3>
+          <p class="text-gray-800 leading-relaxed text-justify text-lg sm:text-xl">Menjadi pusat unggulan riset dan inovasi di bidang Cyber Security, Big Data, GIS, dan Game Technology di tingkat nasional dan internasional.</p>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-red-500 text-3xl font-bold mb-2 text-center">Misi</h3>
+          <ol class="list-decimal text-gray-800 text-lg sm:text-xl leading-relaxed text-justify pl-5">
+            <li>Menyelenggarakan praktikum, riset, dan pelatihan di keempat domain utama (Cyber Security, Big Data, GIS, Game Technology).</li>
+            <li>Mempersiapkan mahasiswa melalui kompetisi seperti CTF, GEMASTIK, dan Data Hackathon.</li>
+            <li>Mengembangkan solusi inovatif berbasis IoT dan AI, seperti proyek Smart Mosque.</li>
+            <li>Berkolaborasi dengan industri, akademisi, dan masyarakat untuk mencetak lulusan yang siap pakai dan berdaya saing tinggi.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisi -->
+    <section id="divisi" class="px-6 sm:px-10 py-20 text-center max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-bold text-white bg-red-500 px-6 py-2 rounded-full shadow-md inline-block mb-6 w-60">Divisi</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Cybersecurity -->
+        <a href="Cybersecurity.html" class="relative block rounded-2xl overflow-hidden shadow-lg group h-32 sm:h-40">
+          <img src="assets/GAMBAR_CYBERSEC.jpeg" alt="Cybersecurity" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <span class="text-white text-xl font-semibold" style="font-family: 'Jura', sans-serif; font-size: 25px;">Cybersecurity</span>
+          </div>
+        </a>
+        <!-- Big Data -->
+        <a href="Big-Data.html" class="relative block rounded-2xl overflow-hidden shadow-lg group h-32 sm:h-40">
+          <img src="assets/GAMBAR_BIGDATA.png" alt="Big Data" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <span class="text-white text-xl font-semibold" style="font-family: 'Jura', sans-serif; font-size: 25px;">Big Data</span>
+          </div>
+        </a>
+        <!-- GIS -->
+        <a href="GIS.html" class="relative block rounded-2xl overflow-hidden shadow-lg group h-32 sm:h-40">
+          <img src="assets/GAMBAR_GIS.png" alt="GIS" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <span class="text-white text-xl font-semibold" style="font-family: 'Jura', sans-serif; font-size: 25px;">GIS</span>
+          </div>
+        </a>
+        <!-- Game Tech -->
+        <a href="Game-Tech.html" class="relative block rounded-2xl overflow-hidden shadow-lg group h-32 sm:h-40">
+          <img src="assets/GAMBAR_GAMETECH.png" alt="Game Tech" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <span class="text-white text-xl font-semibold" style="font-family: 'Jura', sans-serif; font-size: 25px;">Game Tech</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
