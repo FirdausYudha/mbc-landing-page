@@ -17,6 +17,8 @@ Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke back
 ├── send-message.php  		# Backend untuk mengirim email via PHPMailer
 ├── tailwind.config.js		# Konfigurasi Tailwind CSS
 ```
+
+
 # 🚀 Instalasi Lokal & Deployment
 1. **Clone Repo**
 ```bash
