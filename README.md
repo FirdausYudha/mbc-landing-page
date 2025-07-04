@@ -2,7 +2,7 @@
 Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke backend CSCLI serta dashboard keamanan (Wazuh & CrowdSec). Mendukung pengiriman email via PHPMailer dan telah dilengkapi dengan SSL dari Let's Encrypt.
 ## 🧾 Struktur Proyek
 ```text
-/mbc-landing
+/mbc-landing-page
 ├── /assets           		# Berisi gambar dan media statis
 ├── /css              		# File CSS (jika ada di luar Tailwind)
 ├── /vendor           		# Dependensi dari Composer (terutama PHPMailer)
@@ -21,7 +21,7 @@ Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke back
 1. **Clone Repo**
 ```bash
 git clone https://github.com/FirdausYudha/mbc-landing-page.git
-cd mbc-landing
+cd mbc-landing-page
 ```
 2. **Instalasi dependensi**
 ```bash
@@ -32,7 +32,7 @@ composer install
 sudo apt install php8.1 php8.1-fpm
 sudo systemctl start php8.1-fpm
 ```
-4. **Konfigurasi NGINX**
+4. **Konfigurasi NGINX /etc/nginx/sites-available/default**
 ```nginx
 	server {
 		listen 80;
@@ -51,12 +51,7 @@ sudo systemctl start php8.1-fpm
 		}
 	}
 ```
-## Deployment
-1. **Pindahkan ke direktori server**
-```bash
-sudo cp -r * /var/www/html/mbc-landing-page/
-```
-2. **Reload Nginx**
+5. **Reload Nginx**
 ```bash
 sudo nginx -t
 sudo systemctl reload nginx
