@@ -17,7 +17,7 @@ Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke back
 ├── send-message.php  		# Backend untuk mengirim email via PHPMailer
 ├── tailwind.config.js		# Konfigurasi Tailwind CSS
 ```
-## 🚀 Instalasi Lokal
+# 🚀 Instalasi Lokal & Deployment
 1. **Clone Repo**
 ```bash
 git clone https://github.com/FirdausYudha/mbc-landing-page.git
@@ -38,7 +38,7 @@ sudo systemctl start php8.1-fpm
 		listen 80;
 		server_name mbclab.online;
 
-		root /var/www/html/latihan-coding/mbc-landing;
+		root /var/www/html/mbc-landing-page;
 		index index.html index.php;
 
 		location / {
@@ -51,10 +51,10 @@ sudo systemctl start php8.1-fpm
 		}
 	}
 ```
-## ☁️ Deployment
+## Deployment
 1. **Pindahkan ke direktori server**
 ```bash
-sudo cp -r * /var/www/html/latihan-coding/mbc-landing/
+sudo cp -r * /var/www/html/mbc-landing-page/
 ```
 2. **Reload Nginx**
 ```bash
