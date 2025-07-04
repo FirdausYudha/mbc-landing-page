@@ -1,5 +1,5 @@
 # MBC Landing Page
-Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke backend CSCLI serta dashboard keamanan (Wazuh & CrowdSec). Mendukung pengiriman email via PHPMailer dan telah dilengkapi dengan SSL dari Let's Encrypt.
+Landing page untuk MBCLab yang dibangun dengan Nginx, PHP, dan terhubung ke backend CSCLI serta dashboard keamanan (Wazuh & CrowdSec). Mendukung pengiriman email via PHPMailer dan telah dilengkapi dengan SSL dari Let's Encrypt dari Certbot.
 ## 🧾 Struktur Proyek
 ```text
 /mbc-landing-page
